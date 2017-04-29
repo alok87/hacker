@@ -16,6 +16,17 @@ class LinkedList:
             mover = mover.next
         print(mover.data)
 
+    def remove_duplicates(self):
+        data = []
+        mover = self.head
+        data.append(mover.data)
+        while mover.next != None:
+            if mover.next.data not in data:
+                data.append(mover.next.data)
+                mover = mover.next
+            else:
+                mover.next = mover.next.next
+
 def append_node(l, node):
     pointer = l.head
     while pointer.next != None:
@@ -23,7 +34,9 @@ def append_node(l, node):
     pointer.next = node
 
 if __name__ == '__main__':
-    data = random.sample(range(1, 100), 10)
+    data = random.sample(range(1, 1000), 30)
+    data.extend(data)
+    data.extend(data)
     print(data)
     nodes = []
     for d in data:
@@ -32,4 +45,8 @@ if __name__ == '__main__':
     l.head = nodes[0]
     for node in nodes[1:]:
         append_node(l, node)
+    print("List before removing duplicates")
+    l.printlist()
+    print("List after removing duplicates")
+    l.remove_duplicates()
     l.printlist()
