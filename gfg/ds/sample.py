@@ -8,4 +8,3 @@ if __name__ == '__main__':
         random_array = random.sample(range(0, 30), 10)
         test_cases.append(random_array)
         i += 1
-
