@@ -1,6 +1,7 @@
 package main
 
 func main() {
-    // twoD()
-    dynamicArray()
+	// twoD()
+	// dynamicArray()
+	leftRotation()
 }
