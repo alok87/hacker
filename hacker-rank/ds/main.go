@@ -3,5 +3,6 @@ package main
 func main() {
 	// twoD()
 	// dynamicArray()
-	leftRotation()
+	// leftRotation()
+	sparseArrays()
 }
