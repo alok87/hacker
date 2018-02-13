@@ -4,5 +4,6 @@ func main() {
 	// twoD()
 	// dynamicArray()
 	// leftRotation()
-	sparseArrays()
+	// sparseArrays()
+	crush()
 }
