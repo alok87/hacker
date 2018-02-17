@@ -5,5 +5,6 @@ func main() {
 	// dynamicArray()
 	// leftRotation()
 	// sparseArrays()
-	crush()
+	// crush()
+	stackMaxElement()
 }
